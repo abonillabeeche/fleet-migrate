@@ -6,7 +6,7 @@ metadata:
 spec:
   networkMapping:
   - destinationNetwork: default/vlan1
-    sourceNetwork: VM Network
+    sourceNetwork: "VM Network"
   sourceCluster:
     apiVersion: migration.harvesterhci.io/v1beta1
     kind: VmwareSource
