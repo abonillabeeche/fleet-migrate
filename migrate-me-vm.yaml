@@ -10,7 +10,7 @@ spec:
   sourceCluster:
     apiVersion: migration.harvesterhci.io/v1beta1
     kind: VmwareSource
-    name: vcsim
+    name: sphere
     namespace: default
   storageClass: hpe-truenas-iscsi
   virtualMachineName: migrateme
