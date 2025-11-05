@@ -16,3 +16,4 @@ spec:
   virtualMachineName: win2022
   forcePowerOff: false
   gracefulShutdownTimeoutSeconds: 30
+  folder: "subfolder"
