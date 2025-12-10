@@ -1,0 +1,19 @@
+apiVersion: migration.harvesterhci.io/v1beta1
+kind: VirtualMachineImport
+metadata:
+  name: btrfs
+  namespace: default
+spec:
+  networkMapping:
+  - destinationNetwork: default/vlan1
+    sourceNetwork: "VM Network"
+  sourceCluster:
+    apiVersion: migration.harvesterhci.io/v1beta1
+    kind: VmwareSource
+    name: sphere
+    namespace: default
+  storageClass: hpe-truenas-iscsi
+  virtualMachineName: btrfs
+  forcePowerOff: false
+  gracefulShutdownTimeoutSeconds: 30
+  defaultNetworkInterfaceModel: "virtio"
