@@ -12,7 +12,7 @@ spec:
     kind: VmwareSource
     name: sphere
     namespace: default
-  storageClass: hpe-truenas-iscsi
+  storageClass: lvm
   virtualMachineName: btrfs
   forcePowerOff: false
   gracefulShutdownTimeoutSeconds: 30
