@@ -10,9 +10,9 @@ spec:
   sourceCluster:
     apiVersion: migration.harvesterhci.io/v1beta1
     kind: VmwareSource
-    name: sphere
+    name: vcsim
     namespace: default
-  storageClass: hpe-truenas-iscsi
+  storageClass: tworeplicas
   virtualMachineName: migrateme
   forcePowerOff: false
   gracefulShutdownTimeoutSeconds: 30
